@@ -40,9 +40,9 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 | ARTEFATO | PROVA DE FUNCIONAMENTO |
 | :--- | :--- |
 | <img src="img\entrega1-1.png" alt=""/> | **Comprovação de Instalação:** O terminal confirma que todos os GEs (Orion, IoT-Agent, Mosquitto) foram inicializados com sucesso na VM Linux. |
-|  | **Comprovação de Acessibilidade:** O Postman confirmando o status `200 OK` na consulta à versão do Orion Context Broker na porta 1026 do IP Público. |
+|  <img src="img\entrega 2-1.png" alt=""/> | **Comprovação de Acessibilidade:** O Postman confirmando o status `200 OK` na consulta à versão do Orion Context Broker na porta 1026 do IP Público. |
 
-> <img src="img\entrega 2-1.png" alt=""/>
+>
 
 
 
