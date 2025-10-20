@@ -9,7 +9,7 @@
 | João Felipe Bertini | 563478 |
 
 
-<img src="/img/circuito.png.png" alt="Print do circuito ESP32 com DHT22 e Potenciômetros para Vinheria"/>
+<img src="../img/circuito.png.png" alt="Print do circuito ESP32 com DHT22 e Potenciômetros para Vinheria"/>
 
 **Link para o Código Fonte Final:** [https://github.com/PedroH-Batista/CP5_edge]
 
