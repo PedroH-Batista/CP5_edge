@@ -1,15 +1,14 @@
 #  Projeto: Vinheria Inteligente - Validação da Arquitetura FIWARE IoT
 
-## 1. Integrantes �
+## 1. Integrantes 
 
-| Nome | RM | 
-| :--- | :--- | :--- |
+
 | Gabrielle Zollner | 564460 | 
 | Pedro Batista | 563220 | 
 | João Felipe Bertini | 563478 |
 
 
-<img src="../img/circuito.png" alt="Print do circuito ESP32 com DHT22 e Potenciômetros para Vinheria"/>
+<img src="img/circuito.jpg" alt="Print do circuito ESP32 com DHT22 e Potenciômetros para Vinheria"/>
 
 **Link para o Código Fonte Final:** [https://github.com/PedroH-Batista/CP5_edge]
 
