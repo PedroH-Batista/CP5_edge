@@ -53,8 +53,8 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 | ARTEFATO | PROVA DE FUNCIONAMENTO |
 | :--- | :--- |
 | **JSON de Provisionamento** | O corpo da requisição **POST 3** que registrou o `lamp003`, provando o mapeamento dos atributos (`t`=temperatura, `h`=umidade, `l`=luminosidade, `a`=alagamento). |
-| **PRINT 2 (Wokwi Console)** | O console do simulador prova a **conexão MQTT** e o **envio contínuo do payload** UL2.0 para o IoT Agent (`/TEF/lamp003/attrs`). |
-| **PRINT 3 (Visualização Orion)** | **Comprovação de Integração (40 pts):** O Postman consultando a entidade (`GET /v2/entities/...`) retorna o status `200 OK` e mostra os valores **numéricos em tempo real** dos 4 sensores. |
+| <img src="img\entrega1-2.png" alt=""/> | O console do simulador prova a **conexão MQTT** e o **envio contínuo do payload** UL2.0 para o IoT Agent (`/TEF/lamp003/attrs`). |
+| <img src="img\entrega2-2.png" alt=""/>| **Comprovação de Integração (40 pts):** O Postman consultando a entidade (`GET /v2/entities/...`) retorna o status `200 OK` e mostra os valores **numéricos em tempo real** dos 4 sensores. |
 
 > **[INCLUIR AQUI: PRINT 2 - Screenshot do Wokwi/VS Code (Console Serial) mostrando: "Conectado com sucesso ao broker MQTT!" e a linha de Payload UL2.0 enviada]**
 
