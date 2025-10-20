@@ -21,7 +21,6 @@ Este projeto consiste na **Prova de Conceito (PoC)** de um sistema de monitorame
 ### Detalhes da Implementação Técnica
 
 | Componente | Função | Endpoints | Configuração |
-| :--- | :--- | :--- | :--- |
 | **Plataforma (E1)** | Hospedagem dos serviços FIWARE em containers Docker. | IP Público: **`20.150.210.54`** | Sistema operacional Linux, Docker Compose. |
 | **Context Broker** | Gerenciamento central do contexto (estado dos sensores). | Orion (Porta: `1026`) | Status: UP (Ver Print 1) |
 | **IoT Agent** | Gateway de comunicação entre o ESP32 e o Orion. | Porta: `4041` / API Key: **`TEF`** | Status: Provisionado (Ver JSON de Provisionamento) |
@@ -45,7 +44,6 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 
 
 
-
 ###  2. Publicação de Dados em Tempo Real 
 
 **REQUISITO:** Criação do simulador ESP32 e envio dos 4 parâmetros de sensor para o FIWARE, com visualização na plataforma.
@@ -56,9 +54,6 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 | <img src="img\entrega1-2.png" alt=""/> | O console do simulador prova a **conexão MQTT** e o **envio contínuo do payload** UL2.0 para o IoT Agent (`/TEF/lamp003/attrs`). |
 | <img src="img\entrega2-2.png" alt=""/>| **Comprovação de Integração (40 pts):** O Postman consultando a entidade (`GET /v2/entities/...`) retorna o status `200 OK` e mostra os valores **numéricos em tempo real** dos 4 sensores. |
 
-> **[INCLUIR AQUI: PRINT 2 - Screenshot do Wokwi/VS Code (Console Serial) mostrando: "Conectado com sucesso ao broker MQTT!" e a linha de Payload UL2.0 enviada]**
-
-> **[INCLUIR AQUI: PRINT 3 - Screenshot do Postman `GET /v2/entities/...` mostrando `200 OK` e os valores de sensores (o print final que valida o fluxo de dados).]**
 
 ### **3. Comunicação Bidirecional 
 
@@ -66,12 +61,9 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 
 | ARTEFATO | PROVA DE FUNCIONAMENTO |
 | :--- | :--- |
-| **PRINT 4 (Postman PATCH)** | **Comprovação de Envio:** O Postman envia o comando (`PATCH`) para a entidade `lamp003` (ex: `{"off": {...}}`) e recebe o status de sucesso (`204 No Content`), confirmando o disparo da ação. |
-| **PRINT 5 (Wokwi Reagindo)** | **Comprovação de Reação:** O screenshot do Wokwi/VS Code mostrando o **LED de status aceso/apagado** e o console serial registrando a mensagem de comando recebida e executada. |
+| <img src="img\entrega1-3.png" alt=""/>| **Comprovação de Envio:** O Postman envia o comando (`PATCH`) para a entidade `lamp003` (ex: `{"off": {...}}`) e recebe o status de sucesso (`204 No Content`), confirmando o disparo da ação. |
+|  <img src="img\entrega2-3.png" alt=""/>| **Comprovação de Reação:** O screenshot do Wokwi/VS Code mostrando o **LED de status aceso/apagado** e o console serial registrando a mensagem de comando recebida e executada. |
 
-> **[INCLUIR AQUI: PRINT 4 - Screenshot do Postman `PATCH /v2/entities/.../attrs` com o Body do comando e o status 204 No Content.]**
-
-> **[INCLUIR AQUI: PRINT 5 - Screenshot do Wokwi/VS Code mostrando a reação do LED e o console confirmando a recepção do comando.]**
 
 ---
 
