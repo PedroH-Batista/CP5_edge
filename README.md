@@ -42,7 +42,7 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 | <img src="img\entrega1-1.png" alt=""/> | **Comprovação de Instalação:** O terminal confirma que todos os GEs (Orion, IoT-Agent, Mosquitto) foram inicializados com sucesso na VM Linux. |
 |  <img src="img\entrega 2-1.png" alt=""/> | **Comprovação de Acessibilidade:** O Postman confirmando o status `200 OK` na consulta à versão do Orion Context Broker na porta 1026 do IP Público. |
 
->
+
 
 
 
@@ -52,7 +52,7 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 
 | ARTEFATO | PROVA DE FUNCIONAMENTO |
 | :--- | :--- |
-| **JSON de Provisionamento** | O corpo da requisição **POST 3** que registrou o `lamp003`, provando o mapeamento dos atributos (`t`=temperatura, `h`=umidade, `l`=luminosidade, `a`=alagamento). |
+| <img src="img\entrega3-2.png" alt=""/> | O corpo da requisição **POST 3** que registrou o `lamp003`, provando o mapeamento dos atributos (`t`=temperatura, `h`=umidade, `l`=luminosidade, `a`=alagamento). |
 | <img src="img\entrega1-2.png" alt=""/> | O console do simulador prova a **conexão MQTT** e o **envio contínuo do payload** UL2.0 para o IoT Agent (`/TEF/lamp003/attrs`). |
 | <img src="img\entrega2-2.png" alt=""/>| **Comprovação de Integração (40 pts):** O Postman consultando a entidade (`GET /v2/entities/...`) retorna o status `200 OK` e mostra os valores **numéricos em tempo real** dos 4 sensores. |
 
