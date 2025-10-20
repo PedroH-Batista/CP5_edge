@@ -1,6 +1,6 @@
 #  Projeto: Vinheria Inteligente - Validação da Arquitetura FIWARE IoT
 
-## 1. Integrantes 
+## Integrantes 
 
 
 | Gabrielle Zollner | 564460 | 
@@ -14,7 +14,7 @@
 
 ---
 
-## 2. Explicação do Projeto e Arquitetura 
+##  Explicação do Projeto e Arquitetura 
 
 Este projeto consiste na **Prova de Conceito (PoC)** de um sistema de monitoramento para uma adega, utilizando a plataforma **FIWARE** para gerenciamento do contexto e comunicação bidirecional. O objetivo é proteger a qualidade do vinho monitorando remotamente: **Temperatura, Umidade, Luminosidade e Risco de Alagamento**.
 
@@ -29,22 +29,22 @@ Este projeto consiste na **Prova de Conceito (PoC)** de um sistema de monitorame
 
 ---
 
-## 3. Validação das Entregas e Provas de Funcionamento (PoC)
+##  Validação das Entregas e Provas de Funcionamento (PoC)
 
 Esta seção apresenta os resultados da PoC e os prints que comprovam a funcionalidade e o alinhamento com os requisitos do trabalho.
 
-###  Plataforma IoT Cloud FIWARE
+### 1. Plataforma IoT Cloud FIWARE
 
 **REQUISITO:** Instalação e demonstração da acessibilidade da arquitetura base.
 
 | ARTEFATO | PROVA DE FUNCIONAMENTO |
 | :--- | :--- |
-| **PRINT 1 (Docker UP)** | **Comprovação de Instalação:** O terminal confirma que todos os GEs (Orion, IoT-Agent, Mosquitto) foram inicializados com sucesso na VM Linux. |
-| **PRINT 1 (Postman 200 OK)** | **Comprovação de Acessibilidade:** O Postman confirmando o status `200 OK` na consulta à versão do Orion Context Broker na porta 1026 do IP Público. |
+| <img src="img\entrega-1-1.png"/> | **Comprovação de Instalação:** O terminal confirma que todos os GEs (Orion, IoT-Agent, Mosquitto) foram inicializados com sucesso na VM Linux. |
+| <img src="img\entrega-2-1.png"/> | **Comprovação de Acessibilidade:** O Postman confirmando o status `200 OK` na consulta à versão do Orion Context Broker na porta 1026 do IP Público. |
 
 > **[INCLUIR AQUI: PRINT 1 - Screenshot do `sudo docker-compose up` e do `GET 1.Version` do Orion (200 OK)]**
 
-### **🟡 ENTREGA 2: Publicação de Dados em Tempo Real (40 pts)**
+###  2. Publicação de Dados em Tempo Real 
 
 **REQUISITO:** Criação do simulador ESP32 e envio dos 4 parâmetros de sensor para o FIWARE, com visualização na plataforma.
 
@@ -58,7 +58,7 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 
 > **[INCLUIR AQUI: PRINT 3 - Screenshot do Postman `GET /v2/entities/...` mostrando `200 OK` e os valores de sensores (o print final que valida o fluxo de dados).]**
 
-### **🔴 ENTREGA 3: Comunicação Bidirecional (20 pts)**
+### **3. Comunicação Bidirecional 
 
 **REQUISITO:** Demonstrar que a plataforma pode enviar um comando (Southbound) para o dispositivo (`lamp003`).
 
@@ -73,7 +73,7 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 
 ---
 
-## 4. Repositório e Replicabilidade (Entrega 4: 20 pts)
+## Repositório e Replicabilidade 
 
 A replicabilidade do projeto é garantida pela organização dos arquivos e detalhamento do provisionamento.
 
