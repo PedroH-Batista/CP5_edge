@@ -65,23 +65,3 @@ Esta seção apresenta os resultados da PoC e os prints que comprovam a funciona
 |  <img src="img\entrega2-3.png" alt=""/>| **Comprovação de Reação:** O screenshot do Wokwi/VS Code mostrando o **LED de status aceso/apagado** e o console serial registrando a mensagem de comando recebida e executada. |
 
 
----
-
-## Repositório e Replicabilidade 
-
-A replicabilidade do projeto é garantida pela organização dos arquivos e detalhamento do provisionamento.
-
-### Códigos-Fonte Finais
-
-| Pasta | Arquivo | Descrição |
-| :--- | :--- | :--- |
-| `fiware_deploy/` | `docker-compose.yml` | Scripts necessários para subir toda a arquitetura FIWARE (Entrega 1). |
-| `wokwi_code/` | `cp.ino` | Código final do ESP32/Arduino, configurado com `lamp003` e lógica UL2.0. |
-| `wokwi_code/` | `diagram.json` | Mapeamento dos componentes de hardware (ESP32, DHT22, Potenciômetros, LED). |
-
-### Anexos de Integração (Prints de Integração IoT com o Postman)
-
-Estes arquivos provam a comunicação e o estado do sistema, conforme exigido na Entrega 4.
-
-* **`postman_proofs/json_provisionamento.json`**: Cópia do JSON de Body usado para provisionar o `lamp003` (Prova da Estrutura).
-* **`postman_proofs/json_consulta_final.json`**: Cópia da resposta JSON do **PRINT 3**, atestando o formato de dados final.
